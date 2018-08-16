@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/quiz.js"></script>
+
+</head>
+
+<body onLoad="renderQuestions()">
+
+  <header>
+    <a href="#" class="logo"></a>
+    <nav>
+      <a href="#" class="menu-icon"></a>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="current">HOME</a>
+        </li>
+        <li>
+          <a href="aboutme.html">ABOUT ME</a>
+        </li>
+        <li>
+          <a href="contact.html">FORM</a>
+        </li>
+        <li>
+          <a href="petition.html">PETITION</a>
+        </li>
+        <li>
+          <a href="quiz.html">QUIZ</a>
+        </li>
+        <li>
+          <a href="comments.html">COMMENTS</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Quiz</h1>
+    <article class="col col1">
+      <div>Your Points:
+        <span id="points">0</span>
+      </div>
+      <h2>Are bees endangered?</h2>
+      <div id="question1">
+        <button onclick="rightAnswer('question1')">Yes</button>
+        <button onclick="wrongAnswer('question1')">No</button>
+      </div>
+      <h2>What are bees?</h2>
+      <div id="question2">
+        <button onclick="rightAnswer('question2')">Insects</button>
+        <button onclick="wrongAnswer('question2')">Spiders</button>
+        <button onclick="wrongAnswer('question2')">Fish</button>
+      </div>
+      <h2>What is the most important task of bees?</h2>
+      <div id="question3">
+        <button onclick="wrongAnswer('question3')">Honey</button>
+        <button onclick="wrongAnswer('question3')">Zooming</button>
+        <button onclick="rightAnswer('question3')">Pollenating</button>
+      </div>
+    </article>
+    <article class="col col2">
+      <div id="questions"></div>
+    </article>
+  </section>
+
+  <footer>
+    <p class="creator">&copy; 2018 | Created by: Ben</p>
+  </footer>
+
+</body>
+
+</html>
